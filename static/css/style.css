@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.neon-title {
+    color: #39ff14;
+    text-align: center;
+    font-size: 3rem;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+.article-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #39ff14;
+    box-shadow: 0 0 10px #39ff14;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
+    }
+    to {
+        text-shadow: 0 0 20px #39ff14, 0 0 30px #ff0099, 0 0 40px #ff0099;
+    }
+}
